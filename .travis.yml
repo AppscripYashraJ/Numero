@@ -7,3 +7,12 @@ language: swift
 
 script:
 - fastlane scan
+# blocklist
+branches:
+  except:
+  - Branch2_TestCI
+
+# safelist
+branches:
+  only:
+  - master
