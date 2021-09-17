@@ -58,5 +58,11 @@ class ConverterTests: XCTestCase {
       XCTAssertEqual(result, "III", "Conversion for 3 is incorrect")
         
     }
+    
+    func testConversionForOne_PassTest() {
+      let result = converter.convert(1)
+      XCTAssertEqual(result, "I", "Conversion for 1 is incorrect")
+      
+    }
 }
 
